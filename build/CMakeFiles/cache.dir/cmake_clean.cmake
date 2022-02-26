@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/cache.dir/cache.cpp.o"
+  "CMakeFiles/cache.dir/cache.cpp.o.d"
   "CMakeFiles/cache.dir/main.cpp.o"
   "CMakeFiles/cache.dir/main.cpp.o.d"
   "cache"

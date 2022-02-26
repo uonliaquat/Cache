@@ -129,6 +129,30 @@ cache/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cache.dir/build.make CMakeFiles/cache.dir/build
 .PHONY : cache/fast
 
+cache.o: cache.cpp.o
+.PHONY : cache.o
+
+# target to build an object file
+cache.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cache.dir/build.make CMakeFiles/cache.dir/cache.cpp.o
+.PHONY : cache.cpp.o
+
+cache.i: cache.cpp.i
+.PHONY : cache.i
+
+# target to preprocess a source file
+cache.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cache.dir/build.make CMakeFiles/cache.dir/cache.cpp.i
+.PHONY : cache.cpp.i
+
+cache.s: cache.cpp.s
+.PHONY : cache.s
+
+# target to generate assembly for a file
+cache.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cache.dir/build.make CMakeFiles/cache.dir/cache.cpp.s
+.PHONY : cache.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cache"
+	@echo "... cache.o"
+	@echo "... cache.i"
+	@echo "... cache.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
