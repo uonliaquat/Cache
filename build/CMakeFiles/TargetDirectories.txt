@@ -1,0 +1,3 @@
+/Users/uonliaquat/Documents/cache/build/CMakeFiles/cache.dir
+/Users/uonliaquat/Documents/cache/build/CMakeFiles/edit_cache.dir
+/Users/uonliaquat/Documents/cache/build/CMakeFiles/rebuild_cache.dir
