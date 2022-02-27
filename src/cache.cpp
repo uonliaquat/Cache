@@ -28,13 +28,6 @@ vector<T> Cache<T>::get_range(unsigned int index_from, unsigned int index_to){
     return vec;
 }
 
-template<class T>
-void Cache<T>::print(){
-    for (size_t i = 0; i < this->size; i++){
-        cout << this->cache[i] << endl;
-    }
-}
-
 
 
 
