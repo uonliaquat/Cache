@@ -4,8 +4,7 @@
 using namespace std;
 
 int main(){
-
-    
+ 
     Cache<int> cache(3);
     cache.insert_element(10);
     cache.insert_element(11); 
