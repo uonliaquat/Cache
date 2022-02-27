@@ -1,2 +1,2 @@
-# Empty dependencies file for cache.
+# Empty dependencies file for out.
 # This may be replaced when dependencies are built.

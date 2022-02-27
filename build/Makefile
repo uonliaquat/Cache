@@ -117,48 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named cache
+# Target rules for targets named out
 
 # Build rule for target.
-cache: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cache
-.PHONY : cache
+out: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 out
+.PHONY : out
 
 # fast build rule for target.
-cache/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cache.dir/build.make CMakeFiles/cache.dir/build
-.PHONY : cache/fast
-
-cache.o: cache.cpp.o
-.PHONY : cache.o
-
-# target to build an object file
-cache.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cache.dir/build.make CMakeFiles/cache.dir/cache.cpp.o
-.PHONY : cache.cpp.o
-
-cache.i: cache.cpp.i
-.PHONY : cache.i
-
-# target to preprocess a source file
-cache.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cache.dir/build.make CMakeFiles/cache.dir/cache.cpp.i
-.PHONY : cache.cpp.i
-
-cache.s: cache.cpp.s
-.PHONY : cache.s
-
-# target to generate assembly for a file
-cache.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cache.dir/build.make CMakeFiles/cache.dir/cache.cpp.s
-.PHONY : cache.cpp.s
+out/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/build
+.PHONY : out/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cache.dir/build.make CMakeFiles/cache.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -166,7 +142,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cache.dir/build.make CMakeFiles/cache.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -174,8 +150,32 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cache.dir/build.make CMakeFiles/cache.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+src/cache.o: src/cache.cpp.o
+.PHONY : src/cache.o
+
+# target to build an object file
+src/cache.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/src/cache.cpp.o
+.PHONY : src/cache.cpp.o
+
+src/cache.i: src/cache.cpp.i
+.PHONY : src/cache.i
+
+# target to preprocess a source file
+src/cache.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/src/cache.cpp.i
+.PHONY : src/cache.cpp.i
+
+src/cache.s: src/cache.cpp.s
+.PHONY : src/cache.s
+
+# target to generate assembly for a file
+src/cache.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/src/cache.cpp.s
+.PHONY : src/cache.cpp.s
 
 # Help Target
 help:
@@ -185,13 +185,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... cache"
-	@echo "... cache.o"
-	@echo "... cache.i"
-	@echo "... cache.s"
+	@echo "... out"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/cache.o"
+	@echo "... src/cache.i"
+	@echo "... src/cache.s"
 .PHONY : help
 
 

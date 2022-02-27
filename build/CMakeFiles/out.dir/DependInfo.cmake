@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/uonliaquat/Documents/cache/cache.cpp" "CMakeFiles/cache.dir/cache.cpp.o" "gcc" "CMakeFiles/cache.dir/cache.cpp.o.d"
-  "/Users/uonliaquat/Documents/cache/main.cpp" "CMakeFiles/cache.dir/main.cpp.o" "gcc" "CMakeFiles/cache.dir/main.cpp.o.d"
+  "/Users/uonliaquat/Documents/cache/main.cpp" "CMakeFiles/out.dir/main.cpp.o" "gcc" "CMakeFiles/out.dir/main.cpp.o.d"
+  "/Users/uonliaquat/Documents/cache/src/cache.cpp" "CMakeFiles/out.dir/src/cache.cpp.o" "gcc" "CMakeFiles/out.dir/src/cache.cpp.o.d"
   )
 
 # Targets to which this target links.
